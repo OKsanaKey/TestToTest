@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.closeWindow;
 
-class FirstTest {
+public class FirstTest {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
@@ -14,7 +14,7 @@ class FirstTest {
     }
 
     @Test
-    public void testUntitledTestCase() throws Exception {
+    public void testUntitledTestCase() {
         open ("https://app.qase.io/login");
         $(UIMap.login).click();
         $(UIMap.login).clear();
